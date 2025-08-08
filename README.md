@@ -17,8 +17,25 @@ However, on **iOS 26**, the layout **breaks silently**, and cell height does **n
 
 ## Image
 
-![iOS26 view][Image/ios26_view.png] ![ealier view][Image/ealier_view.png] ![iOS26 background][Image/ios26_onbackground.png]
-![iOS26 hierarchy][Image/ios26_onbackground.png] ![ealier hierarchy][Image/earlier_hierarchy.png]
+<p align="center">
+  <img src="Image/ios26_view.png" width="250"/>
+  <img src="Image/ealier_view.png" width="250"/>
+  <img src="Image/ios26_onbackground.png" width="250"/>
+</p>
+<p align="center">
+  <em style="display:inline-block; width:250px;">iOS 26: Layout Bug</em>
+  <em style="display:inline-block; width:250px;">/ Earlier iOS: Expected cell </em>
+  <em style="display:inline-block; width:250px;">/ iOS 26: Fixed by applying background color</em>
+</p>
+
+<p align="center">
+  <img src="Image/ios26_hierarchy.png" width="250"/>
+  <img src="Image/earlier_hierarchy.png" width="250"/>
+</p>
+<p align="center">
+  <em style="display:inline-block; width:250px;">iOS 26 View Hierarchy</em>
+  <em style="display:inline-block; width:250px;">/ Earlier iOS View Hierarchy</em>
+</p>
 
 
 
@@ -40,3 +57,4 @@ Adding the following line inside `awakeFromNib` of the cell unexpectedly fixes t
 
 ```swift
 self.backgroundColor = .clear // or any color
+```
