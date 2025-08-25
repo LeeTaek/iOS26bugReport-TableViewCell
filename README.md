@@ -2,6 +2,9 @@
 
 This is a minimal project to demonstrate a **layout issue on iOS 26** where `UITableViewAutomaticDimension` does not correctly apply dynamic cell height, unless the cell’s background color is explicitly set.
 
+[🔗 FORUM LINK](https://developer.apple.com/forums/thread/796246)
+
+
 ## 💡 Summary
 
 In previous iOS versions, the following setup worked as expected:
